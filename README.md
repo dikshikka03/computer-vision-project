@@ -3,7 +3,7 @@
 An interactive computer vision application built with Python, OpenCV, and Streamlit to detect faces and eyes in uploaded images using Haar Cascade classifiers.
 ## 🌐 Live Demo
 
-Try VisionLens here: **[Open VisionLens](PASTE_YOUR_STREAMLIT_URL_HERE)**
+Try VisionLens here: **[Open VisionLens](https://computer-vision-project-p7aicakpv2bdvu8sxqmzfc.streamlit.app/)**
 ## 🚀 Features
 
 - Face detection in images
