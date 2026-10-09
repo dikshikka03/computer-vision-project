@@ -5,17 +5,26 @@ import numpy as np
 from PIL import Image
 from io import BytesIO
 
+
 st.set_page_config(
-    page_title="Face & Eye Detection",
+    page_title="VisionLens | Computer Vision Studio",
     page_icon="👁️",
     layout="wide",
 )
 
-st.title("👁️ Face & Eye Detection")
-st.write(
-    "An interactive computer vision demo using "
-    "OpenCV and Haar Cascade classifiers."
+st.title("👁️ VisionLens")
+st.subheader("Computer Vision Studio")
+st.markdown(
+    "Explore face and eye detection with "
+    "Python, OpenCV, and Haar Cascade classifiers."
 )
+st.write(
+    "An interactive computer vision application for detecting "
+    "faces and eyes in images using OpenCV and Haar Cascade classifiers."
+)
+
+st.divider()
+
 
 st.info(
     "Upload a JPG or PNG image to detect faces and eyes."
