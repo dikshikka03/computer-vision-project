@@ -169,6 +169,10 @@ computer-vision-project/
 - Improve robustness across different lighting conditions and face orientations.
 - Explore additional object detection and segmentation capabilities.
 
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
 ## 👩‍💻 Author
 
 **Dikshika**
