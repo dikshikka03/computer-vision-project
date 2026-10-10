@@ -1,69 +1,70 @@
-# 👁️ VisionLens — Computer Vision Studio
+# 👁️ Face and Eye Detection using OpenCV
 
-An interactive computer vision application built with Python, OpenCV, and Streamlit to detect faces and eyes in uploaded images using Haar Cascade classifiers.
-## 🌐 Live Demo
+This project uses OpenCV and Haar Cascade classifiers to detect faces and eyes in images and live webcam feed.
 
-Try VisionLens here: **[Open VisionLens](https://computer-vision-project-p7aicakpv2bdvu8sxqmzfc.streamlit.app/)**
+---
+
 ## 🚀 Features
-
 - Face detection in images
-- Eye detection within detected face regions
-- Real-time visual feedback through annotated images
-- Face and eye detection counts
-- Original image and detection output comparison
-- Downloadable annotated results
-- Interactive web interface
+- Eye detection inside detected faces
+- Live face & eye detection using webcam
+
+---
 
 ## 🛠️ Technologies Used
+- Python
+- OpenCV (cv2)
+- NumPy
 
-- **Python** — Core programming language
-- **OpenCV** — Image processing and object detection
-- **Haar Cascade Classifiers** — Face and eye detection
-- **NumPy** — Image array processing
-- **Pillow (PIL)** — Image handling
-- **Streamlit** — Interactive web application
+---
 
-## ⚙️ Run Locally
+## 📂 Project Structure
+Face-Detection-Project/
+│
+├── detectFacesAndEyes.py
+├── liveFacesAndEyes.py
+├── images/
+├── cascades/
+└── results/
 
-1. Clone the repository:
+## ▶️ How to Run
 
-   ```bash
-   git clone https://github.com/dikshikka03/computer-vision-project.git
-   ```
+### 1. Install dependencies
+pip install opencv-python numpy
 
-2. Navigate to the project directory:
+### 2. Run image detection
+python detectFacesAndEyes.py
 
-   ```bash
-   cd computer-vision-project
-   ```
+### 3. Run live detection
+python liveFacesAndEyes.py
 
-3. Install the dependencies:
+Press **Q** to exit webcam.
+## 📸 Output
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+### Original Image
+![Original](images/children.jpg)
+![Original](images/Hillary.jpg)
+![Original](images/narcos.jpg)
+![Original](images/svalley.jpg)
+![Original](images/Trump.jpg)
 
-4. Start the application:
+### Detected Faces & Eyes
+![Detected](results/output.jpg)
+- Detects faces using rectangles
+- Detects eyes inside faces
+- Works on both images and live webcam
 
-   ```bash
-   python -m streamlit run app.py
-   ```
+- ## ⚠️ Important
 
-## 🧠 How It Works
+- Ensure Haar cascade files are in the `cascades/` folder
+- Update image path if needed
 
-1. The user uploads an image.
-2. OpenCV converts the image into grayscale.
-3. Haar Cascade classifiers detect faces.
-4. Eye detection runs within the detected face regions.
-5. The application displays the annotated image and detection counts.
-6. The user can download the processed image.
+- ## 💡 Future Improvements
 
-## ⚠️ Limitations
+- Add smile detection
+- Add emotion recognition
+- Improve detection accuracy using deep learning
 
-Detection performance can vary depending on lighting, face orientation, image quality, and occlusion. Haar Cascade classifiers may produce false positives or miss faces.
+- ## 👩‍💻 Author
 
-## 👩‍💻 Author
-
-**Dikshika**
-
-GitHub: [@dikshikka03](https://github.com/dikshikka03)
+Dikshika

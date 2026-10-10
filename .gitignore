@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+app.py.backup
+app.py.broken
+app.py.before-tabs
+app.py.tabs-backup
+app.py.design-backup
+evaluation/*.backup
